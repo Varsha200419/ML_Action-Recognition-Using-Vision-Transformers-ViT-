@@ -1,0 +1,132 @@
+# Action Recognition Configuration File - Coursework Experiments
+
+# Dataset Configuration
+data:
+  dataset_path: "data/raw/HMDB_simp"
+  num_classes: 25
+  num_frames: 8
+  image_size: 224
+  train_ratio: 0.8
+  augmentation: true
+  
+  # Preprocessed Data Options
+  use_preprocessed: false  # Set to true to use preprocessed data
+  preprocessed_path: ""    # Path to preprocessed data folder (auto-detected if empty)
+
+# Model Configuration
+model:
+  type: "timesformer"  # Options: "timesformer", "vit", "cnn_lstm"
+  
+  # TimeSFormer specific
+  timesformer:
+    patch_size: 16
+    hidden_size: 768
+    num_heads: 12
+    num_layers: 12
+  
+  # ViT specific  
+  vit:
+    patch_size: 16
+    embed_dim: 768
+    num_heads: 12
+    num_layers: 12
+  
+  # CNN-LSTM specific
+  cnn_lstm:
+    lstm_hidden_size: 512
+    lstm_layers: 2
+
+# Training Configuration (Default Settings)
+training:
+  epochs: 10
+  batch_size: 4
+  learning_rate: 0.0001
+  optimizer: "adam"  # Options: "adam", "sgd", "adamw"
+  weight_decay: 0.01
+  scheduler: "cosine"  # Options: "cosine", "step", "none"
+  
+  # SGD specific
+  sgd:
+    momentum: 0.9
+    nesterov: true
+  
+  # Step scheduler specific
+  step_scheduler:
+    step_size: 10
+    gamma: 0.1
+
+# Experiment Configurations for Hyperparameter Tuning
+experiments:
+  
+  # Experiment 1: Optimizer Comparison
+  optimizer_exp:
+    enabled: true
+    optimizers: ["adam", "sgd", "adamw"]
+    base_config:
+      epochs: 10
+      batch_size: 4
+      learning_rate: 0.0001
+  
+  # Experiment 2: Batch Size Study
+  batch_size_exp:
+    enabled: true
+    batch_sizes: [2, 4, 8, 16]
+    base_config:
+      epochs: 10
+      optimizer: "adam"
+      learning_rate: 0.0001
+  
+  # Experiment 3: Learning Rate Study
+  learning_rate_exp:
+    enabled: true
+    learning_rates: [0.01, 0.001, 0.0001, 0.00001]
+    base_config:
+      epochs: 10
+      batch_size: 4
+      optimizer: "adam"
+  
+  # Experiment 4: Model Comparison
+  model_comparison_exp:
+    enabled: true
+    models: ["timesformer", "vit", "cnn_lstm"]
+    base_config:
+      epochs: 10
+      batch_size: 4
+      learning_rate: 0.0001
+      optimizer: "adam"
+
+# Evaluation Configuration
+evaluation:
+  save_confusion_matrix: true
+  save_predictions: true
+  calculate_per_class_metrics: true
+  top_k_accuracy: [1, 5]
+
+# Logging and Saving
+logging:
+  log_interval: 10  # Log every N batches
+  save_model_every: 5  # Save model every N epochs
+  tensorboard: true
+  wandb: false  # Set to true if using Weights & Biases
+
+# Paths
+paths:
+  models_dir: "outputs/models"
+  logs_dir: "outputs/logs"
+  predictions_dir: "outputs/predictions"
+  results_dir: "outputs/results"
+
+# Hardware Configuration
+hardware:
+  device: "auto"  # "auto", "cpu", "cuda"
+  num_workers: 0  # DataLoader workers (0 for Windows compatibility)
+  pin_memory: true
+
+# Streamlit Interface Configuration
+streamlit:
+  title: "Action Recognition Demo"
+  description: "Upload videos to classify human actions using trained models"
+  max_file_size: 50  # MB
+  supported_formats: [".mp4", ".avi", ".mov"]
+  demo_videos: true  # Show demo videos
+  model_comparison: true  # Allow comparison between models

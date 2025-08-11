@@ -1,0 +1,149 @@
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([8, 25])
+Raw logits shape: torch.Size([5, 25])
+Test ground truth labels (y_true): [11 18 23 22 17  7 17 14 21 10 24  4  9  7 15  0  5 19 11 18 13  7  9 11
+ 18 13 10 12 11 19  4  8  5 16  9  5  3  7  0 19  8  3 23  5  9 16 21 12
+ 20 19  1 22 14  9  2 24 16 20  6 12  0 10 14  3  4 14 21  8 15 17 12 20
+  3 24  6 17  6  2 11  8 16 15 17 13 22  1  2 20 24  8  0 23 19 23 12 23
+ 18  7  6 10 20 22  4  1 21  3 24 16 22  0 18 13  6  4  2 14  2 10  1 15
+ 13  1 15  5 21]
+Test predicted labels (y_pred): [11 18 23 22 17 14 17 14 14 10 24  4  9  7 15  0  5 18  9 18 13  7  9 11
+ 18  2 10 12 11 19  4  8  5 16 11  5  3  7  0 24  8  3 23  5  9 16 21 12
+ 20 19  1 23 14  9  2 24 16 20  6 12  0 10 14  3  4 14 21  6 15 17 12 20
+  3  6  6 13  6  2 11  8 16 15 17 22 22  1  2 20 24  8  0 23 19 22 12 23
+ 18  7  6 10 20 22  4  1  7 21 24 16 22  0 18 13  6  4 23 14  2 10  1 15
+ 13  1 15  5 21]
+Test Top-1 Accuracy: 87.20%
+Test Top-5 Accuracy: 98.40% (123/125 samples)
+Figure(1200x1000)
+Precision and Recall per Class (Table):
++--------------+---------------+-------------+----------+
+| Class Name   |   Class Index |   Precision |   Recall |
++==============+===============+=============+==========+
+| brush_hair   |             0 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| cartwheel    |             1 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| catch        |             2 |      0.8    |      0.8 |
++--------------+---------------+-------------+----------+
+| chew         |             3 |      1      |      0.8 |
++--------------+---------------+-------------+----------+
+| climb        |             4 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| climb_stairs |             5 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| draw_sword   |             6 |      0.7143 |      1   |
++--------------+---------------+-------------+----------+
+| eat          |             7 |      0.8    |      0.8 |
++--------------+---------------+-------------+----------+
+| fencing      |             8 |      1      |      0.8 |
++--------------+---------------+-------------+----------+
+| flic_flac    |             9 |      0.8    |      0.8 |
++--------------+---------------+-------------+----------+
+| golf         |            10 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| handstand    |            11 |      0.8    |      0.8 |
++--------------+---------------+-------------+----------+
+| kiss         |            12 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| pick         |            13 |      0.75   |      0.6 |
++--------------+---------------+-------------+----------+
+| pour         |            14 |      0.7143 |      1   |
++--------------+---------------+-------------+----------+
+| pullup       |            15 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| pushup       |            16 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| ride_bike    |            17 |      1      |      0.8 |
++--------------+---------------+-------------+----------+
+| shoot_bow    |            18 |      0.8333 |      1   |
++--------------+---------------+-------------+----------+
+| shoot_gun    |            19 |      1      |      0.6 |
++--------------+---------------+-------------+----------+
+| situp        |            20 |      1      |      1   |
++--------------+---------------+-------------+----------+
+| smile        |            21 |      0.75   |      0.6 |
++--------------+---------------+-------------+----------+
+| smoke        |            22 |      0.6667 |      0.8 |
++--------------+---------------+-------------+----------+
+| throw        |            23 |      0.6667 |      0.8 |
++--------------+---------------+-------------+----------+
+| wave         |            24 |      0.8    |      0.8 |
++--------------+---------------+-------------+----------+
+Correctly Classified Samples:
+
+Sample 1 (Index: 44):
+Actual Class: flic_flac
+Predicted Class: flic_flac
+Top-5 Predictions:
+  1. flic_flac: 99.13%
+  2. handstand: 0.46%
+  3. cartwheel: 0.15%
+  4. pushup: 0.09%
+  5. pick: 0.04%
+
+Sample 2 (Index: 113):
+Actual Class: climb
+Predicted Class: climb
+Top-5 Predictions:
+  1. climb: 98.11%
+  2. pick: 0.85%
+  3. smile: 0.15%
+  4. cartwheel: 0.12%
+  5. catch: 0.09%
+
+Sample 3 (Index: 28):
+Actual Class: handstand
+Predicted Class: handstand
+Top-5 Predictions:
+  1. handstand: 99.90%
+  2. pushup: 0.06%
+  3. situp: 0.01%
+  4. flic_flac: 0.01%
+  5. pullup: 0.01%
+
+
+Incorrectly Classified Samples:
+
+Sample 1 (Index: 39):
+Actual Class: shoot_gun
+Predicted Class: wave
+Top-5 Predictions:
+  1. wave: 52.37%
+  2. shoot_gun: 37.03%
+  3. draw_sword: 4.41%
+  4. throw: 1.68%
+  5. pick: 1.16%
+
+Sample 2 (Index: 75):
+Actual Class: ride_bike
+Predicted Class: pick
+Top-5 Predictions:
+  1. pick: 55.54%
+  2. ride_bike: 34.50%
+  3. climb: 4.49%
+  4. climb_stairs: 2.92%
+  5. pushup: 0.92%
+
+Sample 3 (Index: 34):
+Actual Class: flic_flac
+Predicted Class: handstand
+Top-5 Predictions:
+  1. handstand: 62.22%
+  2. flic_flac: 29.80%
+  3. catch: 3.64%
+  4. pullup: 2.61%
+  5. climb: 0.73%

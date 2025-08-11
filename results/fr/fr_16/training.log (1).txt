@@ -1,0 +1,37 @@
+2025-05-08 11:10:42,005 - INFO - Using device: cuda
+2025-05-08 11:10:42,005 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:14:49,335 - INFO - Using device: cuda
+2025-05-08 11:14:49,336 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:16:17,746 - INFO - Using device: cuda
+2025-05-08 11:16:17,747 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:18:28,862 - INFO - Using device: cuda
+2025-05-08 11:18:28,862 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:19:12,800 - INFO - Using device: cuda
+2025-05-08 11:19:12,800 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:32:27,021 - INFO - Using device: cuda
+2025-05-08 11:32:27,021 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 5
+2025-05-08 11:33:27,568 - INFO - Epoch 1/5, Loss: 2.82735417842865
+2025-05-08 11:33:34,758 - INFO - Epoch 1/5, Train Loss: 2.8274, Val Loss: 1.3374, Val Accuracy: 0.6220
+2025-05-08 11:33:51,826 - INFO - Using device: cuda
+2025-05-08 11:33:51,827 - INFO - Model: deit, Batch Size: 8, Learning Rate: 0.0001, Epochs: 10
+2025-05-08 11:34:51,752 - INFO - Epoch 1/10, Loss: 2.8109523668289182
+2025-05-08 11:34:58,936 - INFO - Epoch 1/10, Train Loss: 2.8110, Val Loss: 1.3033, Val Accuracy: 0.6181
+2025-05-08 11:35:55,720 - INFO - Epoch 2/10, Loss: 0.6015449050664902
+2025-05-08 11:36:02,879 - INFO - Epoch 2/10, Train Loss: 0.6015, Val Loss: 1.0670, Val Accuracy: 0.7103
+2025-05-08 11:36:59,590 - INFO - Epoch 3/10, Loss: 0.09673410968482495
+2025-05-08 11:37:06,680 - INFO - Epoch 3/10, Train Loss: 0.0967, Val Loss: 1.0784, Val Accuracy: 0.7351
+2025-05-08 11:38:03,652 - INFO - Epoch 4/10, Loss: 0.009794141856953502
+2025-05-08 11:38:10,803 - INFO - Epoch 4/10, Train Loss: 0.0098, Val Loss: 1.0516, Val Accuracy: 0.7371
+2025-05-08 11:39:07,521 - INFO - Epoch 5/10, Loss: 0.002699049481190741
+2025-05-08 11:39:14,811 - INFO - Epoch 5/10, Train Loss: 0.0027, Val Loss: 1.0501, Val Accuracy: 0.7431
+2025-05-08 11:40:11,571 - INFO - Epoch 6/10, Loss: 0.0017796266954392195
+2025-05-08 11:40:18,790 - INFO - Epoch 6/10, Train Loss: 0.0018, Val Loss: 1.0508, Val Accuracy: 0.7411
+2025-05-08 11:41:15,576 - INFO - Epoch 7/10, Loss: 0.001762259331997484
+2025-05-08 11:41:22,801 - INFO - Epoch 7/10, Train Loss: 0.0018, Val Loss: 1.0502, Val Accuracy: 0.7460
+2025-05-08 11:42:19,805 - INFO - Epoch 8/10, Loss: 0.0008993705534376204
+2025-05-08 11:42:27,004 - INFO - Epoch 8/10, Train Loss: 0.0009, Val Loss: 1.0563, Val Accuracy: 0.7450
+2025-05-08 11:43:23,790 - INFO - Epoch 9/10, Loss: 0.0006809916645288467
+2025-05-08 11:43:30,972 - INFO - Epoch 9/10, Train Loss: 0.0007, Val Loss: 1.0629, Val Accuracy: 0.7450
+2025-05-08 11:44:27,835 - INFO - Epoch 10/10, Loss: 0.0005516888862475753
+2025-05-08 11:44:35,017 - INFO - Epoch 10/10, Train Loss: 0.0006, Val Loss: 1.0655, Val Accuracy: 0.7470
+2025-05-08 11:44:35,423 - INFO - Model saved to deit_model.pth
