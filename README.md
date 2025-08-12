@@ -20,7 +20,6 @@ This project implements video action recognition on the HMDB_simp dataset using 
 - Configurable training pipeline via YAML config files
 - Evaluation metrics: Top-1/Top-5 accuracy, confusion matrix
 - Automatic saving of logs, model weights, and confusion matrices
-- Visualization tools for loss curves and metrics
 - Streamlit-based interactive web application for demo and inference
 
 ---
@@ -101,7 +100,7 @@ Launch the interactive Streamlit web app for demo and inference:
 ```bash
 streamlit run app.py
 ```
-- Features: Upload video, run inference, view predicted action, visualize metrics.
+- Features: Upload video, run inference, view predicted action.
 
 ---
 
