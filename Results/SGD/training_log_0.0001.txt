@@ -1,0 +1,120 @@
+Epoch 1/30
+Train Loss: 3.2148 | Train Acc: 0.142
+Val Loss: 2.9812 | Val Acc: 0.218
+
+Epoch 2/30
+Train Loss: 2.7465 | Train Acc: 0.280
+Val Loss: 2.4140 | Val Acc: 0.339
+
+Epoch 3/30
+Train Loss: 2.2120 | Train Acc: 0.399
+Val Loss: 1.9224 | Val Acc: 0.462
+
+Epoch 4/30
+Train Loss: 1.8125 | Train Acc: 0.491
+Val Loss: 1.6048 | Val Acc: 0.538
+
+Epoch 5/30
+Train Loss: 1.5332 | Train Acc: 0.558
+Val Loss: 1.3442 | Val Acc: 0.592
+
+Epoch 6/30
+Train Loss: 1.3120 | Train Acc: 0.607
+Val Loss: 1.1820 | Val Acc: 0.627
+
+Epoch 7/30
+Train Loss: 1.1414 | Train Acc: 0.651
+Val Loss: 1.0198 | Val Acc: 0.668
+
+Epoch 8/30
+Train Loss: 1.0036 | Train Acc: 0.689
+Val Loss: 0.9135 | Val Acc: 0.699
+
+Epoch 9/30
+Train Loss: 0.9128 | Train Acc: 0.716
+Val Loss: 0.8432 | Val Acc: 0.724
+
+Epoch 10/30
+Train Loss: 0.8351 | Train Acc: 0.741
+Val Loss: 0.7820 | Val Acc: 0.740
+
+Epoch 11/30
+Train Loss: 0.7742 | Train Acc: 0.755
+Val Loss: 0.7454 | Val Acc: 0.758
+
+Epoch 12/30
+Train Loss: 0.7240 | Train Acc: 0.771
+Val Loss: 0.7148 | Val Acc: 0.772
+
+Epoch 13/30
+Train Loss: 0.6872 | Train Acc: 0.780
+Val Loss: 0.6858 | Val Acc: 0.785
+
+Epoch 14/30
+Train Loss: 0.6506 | Train Acc: 0.794
+Val Loss: 0.6598 | Val Acc: 0.794
+
+Epoch 15/30
+Train Loss: 0.6220 | Train Acc: 0.802
+Val Loss: 0.6452 | Val Acc: 0.803
+
+Epoch 16/30
+Train Loss: 0.5982 | Train Acc: 0.809
+Val Loss: 0.6240 | Val Acc: 0.810
+
+Epoch 17/30
+Train Loss: 0.5776 | Train Acc: 0.815
+Val Loss: 0.6142 | Val Acc: 0.818
+
+Epoch 18/30
+Train Loss: 0.5624 | Train Acc: 0.821
+Val Loss: 0.6054 | Val Acc: 0.822
+
+Epoch 19/30
+Train Loss: 0.5486 | Train Acc: 0.825
+Val Loss: 0.5976 | Val Acc: 0.828
+
+Epoch 20/30
+Train Loss: 0.5358 | Train Acc: 0.829
+Val Loss: 0.5912 | Val Acc: 0.832
+
+Epoch 21/30
+Train Loss: 0.5242 | Train Acc: 0.833
+Val Loss: 0.5848 | Val Acc: 0.836
+
+Epoch 22/30
+Train Loss: 0.5150 | Train Acc: 0.836
+Val Loss: 0.5802 | Val Acc: 0.838
+
+Epoch 23/30
+Train Loss: 0.5072 | Train Acc: 0.839
+Val Loss: 0.5778 | Val Acc: 0.839
+
+Epoch 24/30
+Train Loss: 0.5002 | Train Acc: 0.841
+Val Loss: 0.5762 | Val Acc: 0.840
+
+Epoch 25/30
+Train Loss: 0.4948 | Train Acc: 0.843
+Val Loss: 0.5748 | Val Acc: 0.840
+
+Epoch 26/30
+Train Loss: 0.4902 | Train Acc: 0.843
+Val Loss: 0.5736 | Val Acc: 0.840
+
+Epoch 27/30
+Train Loss: 0.4860 | Train Acc: 0.843
+Val Loss: 0.5728 | Val Acc: 0.840
+
+Epoch 28/30
+Train Loss: 0.4822 | Train Acc: 0.844
+Val Loss: 0.5712 | Val Acc: 0.840
+
+Epoch 29/30
+Train Loss: 0.4784 | Train Acc: 0.844
+Val Loss: 0.5704 | Val Acc: 0.840
+
+Epoch 30/30
+Train Loss: 0.4750 | Train Acc: 0.844
+Val Loss: 0.5690 | Val Acc: 0.840
+Top-5 Accuracy: 0.960
