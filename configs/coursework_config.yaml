@@ -1,0 +1,49 @@
+# Coursework Configuration
+# Add hyperparameters, paths, and settings here
+dataset:
+  root_dir: "/content/AR_Vit/AR_Vit/Results/HMDB_simp_processed"
+  categories: [brush_hair, cartwheel, chew, climb, climb_stairs, catch, draw_sword, eat, fencing, flic_flac, golf, handstand, kiss, pick, pour, pullup, pushup, ride_bike, shoot_bow, shoot_gun, situp, smile, smoke, throw, wave]
+  num_frames: 8
+  frame_size: 224
+  sampling_rate: 8
+
+training:
+  batch_size: 4
+  epochs: 2  # Set to 2 for quick testing
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  early_stopping_patience: 5
+  dropout_rate: 0.1
+
+optimizer:
+  type: "AdamW"
+  betas: [0.9, 0.999]
+  eps: 1e-8
+
+lr_scheduler:
+  type: "StepLR"
+  step_size: 10
+  gamma: 0.1
+
+augmentation:
+  horizontal_flip_prob: 0.5
+  brightness_range: 0.3
+  contrast_range: 0.3
+  temporal_dropout_prob: 0.1
+  noise_std: 0.05
+
+model:
+  # Switch between these two for testing
+  # model_name: "facebook/timesformer-base-finetuned-k400"
+  model_name: "google/vit-base-patch16-224-in21k"  # Example ViT model
+
+experiments:
+  results_dir: "/content/AR_Vit/AR_Vit/Results/HMDB_simp_processed"
+  default:
+    description: "Default configuration"
+    learning_rate: 0.0001
+    num_frames: 8
+    sampling_rate: 8
+    batch_size: 4
+    epochs: 15
+    weight_decay: 0.01

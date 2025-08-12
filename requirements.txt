@@ -1,30 +1,12 @@
-# Core ML libraries - Enhanced for Coursework (Network-Resilient)
-torch>=2.0.0
-torchvision>=0.15.0
-transformers>=4.30.0
-timm>=0.9.0
-tensorboard>=2.13.0
-
-# Pre-trained model support (Essential)
-accelerate>=0.20.0
-safetensors>=0.3.0
-huggingface-hub>=0.15.0
-
-# Data processing and visualization (Core)
-numpy>=1.24.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-Pillow>=10.0.0
-scikit-learn>=1.2.0  # Lowered version for better compatibility
-opencv-python-headless>=4.8.0  # Headless version for servers
-
-# Progress bars and utilities (Essential)
-tqdm>=4.65.0
-PyYAML>=6.0
-psutil>=5.9.0
-
-# Additional utilities (Optional - install if network allows)
-# einops>=0.6.0
-# wandb>=0.15.0
-# decord>=0.6.0
-# av>=10.0.0
+torch
+transformers
+tensorboard
+opencv-python
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+Pillow
+streamlit
+pyyaml
